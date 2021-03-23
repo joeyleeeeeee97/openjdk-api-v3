@@ -18,6 +18,15 @@
       "websiteDescriptionLink": "https://www.eclipse.org/openj9"
     },
     {
+      "searchableName": "openjdk8-dragonwell",
+      "jvm": "dragonwell",
+      "vendor": "alibaba",
+      "version": 8,
+      "lts": true,
+      "websiteDescription": "Alibaba Dragonwell",
+      "websiteDescriptionLink": "http://dragonwell-jdk.io/"
+    },
+    {
       "searchableName": "openjdk9-hotspot",
       "jvm": "hotspot",
       "vendor": "adoptopenjdk",
@@ -60,6 +69,15 @@
       "lts": true,
       "websiteDescription": "Eclipse OpenJ9",
       "websiteDescriptionLink": "https://www.eclipse.org/openj9"
+    },
+    {
+      "searchableName": "openjdk11-dragonwell",
+      "jvm": "dragonwell",
+      "vendor": "alibaba",
+      "version": 11,
+      "lts": true,
+      "websiteDescription": "Alibaba Dragonwell",
+      "websiteDescriptionLink": "http://dragonwell-jdk.io/"
     },
     {
       "searchableName": "openjdk12-hotspot",

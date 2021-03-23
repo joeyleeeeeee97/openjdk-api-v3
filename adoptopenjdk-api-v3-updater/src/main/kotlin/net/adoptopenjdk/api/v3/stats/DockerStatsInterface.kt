@@ -52,7 +52,12 @@ class DockerStatsInterface @Inject constructor(
                     it.getJsonNumber("pull_count").longValue(),
                     it.getString("name"),
                     getOpenjdkVersionFromString(it.getString("name")),
-                    if (it.getString("name").contains("openj9")) JvmImpl.openj9 else JvmImpl.hotspot // Will need to be updated with a new JVMImpl
+                    if (it.getString("name").contains("openj9"))
+                        JvmImpl.openj9
+                    else if (it.getString("name").contains("openj9"))
+                        JvmImpl.hotspot // Will need to be updated with a new JVMImpl
+                    else
+                        JvmImpl.dragonwell
                 )
             }
     }
